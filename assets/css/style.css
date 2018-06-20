@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: URL("../images/qbkls.png")
+}
+
+.navbar {
+     height: 75px;
+    border-bottom: 5px solid lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+  
+ }
+
+.row {
+    background: white;
+    
+}
+
+
+#my-name{
+   background: #4aaaa5;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 38px;
+    align-items: center;
+  height: 70px;
+  color: white;
+   
+}
+
+
+#content {
+    width: 960px;
+    background-color: white;
+}
+
+
+p {
+   border: 2px;
+   color: gray;
+   padding-bottom: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+   padding-top: 20px;
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif
+
+}
+
+h2 {
+   Color: #4aaaa5;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 30px;
+}
+img {
+   float: left;
+   width: 200px;
+   height: 250px;
+   padding-bottom: 50px;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+    clear: both;
+    color: #ffffff;
+    background: gray;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 5px solid #4aaaa5;
+    flex-shrink: 0;
+}
+
+form {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
