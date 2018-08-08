@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/reset.css">
 
-   
+
     <!--Linking external stylesheet to style elements to match last week's homework exactly-->
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -43,78 +43,85 @@
 
         <div class="slideshow-container">
 
-                <div class="mySlides fade">
-                  <div class="numbertext">1 / 5</div>
-                  <img src="assets/images/trainschedule-screenshot.png" style="width:100%">
-                  <div class="text1">Click here to learn about Train Scheduler</div>
-                </div>
-                
-                <div class="mySlides fade">
-                  <div class="numbertext">2 / 5</div>
-                  <img src="assets/images/hangman-screenshot.png" style="width:100%">
-                  <div class="text2">Click here to learn about Hangman</div>
-                </div>
-                
-                <div class="mySlides fade">
-                  <div class="numbertext">3 / 5</div>
-                  <img src="assets/images/groupproject-screenshot.png" style="width:100%">
-                  <div class="text3">Click here to learn about What's for Dinner, DFW</div>
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 6</div>
+                <img src="assets/images/trainschedule-screenshot.png" style="width:100%">
+                <div class="text1">Click here to learn about Train Scheduler</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 6</div>
+                <img src="assets/images/hangman-screenshot.png" style="width:100%">
+                <div class="text2">Click here to learn about Hangman</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <img src="assets/images/groupproject-screenshot.png" style="width:100%">
+                <div class="text3">Click here to learn about What's for Dinner, DFW</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img src="assets/images/crysalcounter-screenshot.png" style="width:100%">
+                <div class="text4">Click here to learn about Crystal Counter</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img src="assets/images/giphy-screenshot.png" style="width:100%">
+                <div class="text5">Click here to learn about Giphy</div>
+            </div>
+
+            <div class="mySlides fade">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="assets/images/triviagame-screenshot.png" style="width:100%">
+                    <div class="text6">Click here to learn about Periodic Table Trivia</div>
                 </div>
 
-                <div class="mySlides fade">
-                        <div class="numbertext">4 / 5</div>
-                        <img src="assets/images/crysalcounter-screenshot.png" style="width:100%">
-                        <div class="text4">Click here to learn about Crystal Counter</div>
-                      </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-                      <div class="mySlides fade">
-                            <div class="numbertext">4 / 5</div>
-                            <img src="assets/images/giphy-screenshot.png" style="width:100%">
-                            <div class="text5">Click here to learn about Giphy</div>
-                          </div>
-                
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                
-                </div>
-                <br>
-                
-                <div style="text-align:center">
-                  <span class="dot" onclick="currentSlide(1)"></span> 
-                  <span class="dot" onclick="currentSlide(2)"></span> 
-                  <span class="dot" onclick="currentSlide(3)"></span>
-                  <span class="dot" onclick="currentSlide(4)"></span>
-                  <span class="dot" onclick="currentSlide(5)"></span> 
-                </div>
+        </div>
+        <br>
 
-                <script>
-                        var slideIndex = 1;
-                        showSlides(slideIndex);
-                        
-                        function plusSlides(n) {
-                          showSlides(slideIndex += n);
-                        }
-                        
-                        function currentSlide(n) {
-                          showSlides(slideIndex = n);
-                        }
-                        
-                        function showSlides(n) {
-                          var i;
-                          var slides = document.getElementsByClassName("mySlides");
-                          var dots = document.getElementsByClassName("dot");
-                          if (n > slides.length) {slideIndex = 1}    
-                          if (n < 1) {slideIndex = slides.length}
-                          for (i = 0; i < slides.length; i++) {
-                              slides[i].style.display = "none";  
-                          }
-                          for (i = 0; i < dots.length; i++) {
-                              dots[i].className = dots[i].className.replace(" active", "");
-                          }
-                          slides[slideIndex-1].style.display = "block";  
-                          dots[slideIndex-1].className += " active";
-                        }
-                        </script>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
 
 
         <footer>Copyright &copy 2018
