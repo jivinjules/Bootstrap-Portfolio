@@ -4,11 +4,13 @@ $(document).ready(function () {
 var currentTime = moment();
 
 //displays current time on the jumbotron
-$('#clock').html(moment(currentTime).format('MMMM D. YYYY LT'));
+$('#clock').html(moment(currentTime).format('MMMM D, YYYY LT'));
 
 function update() {
-    $('#clock').html(moment().format('MMMM D. YYYY LT'));
+    $('#clock').html(moment().format('MMMM D, YYYY LT'));
 }
 setInterval(update, 60000);
+
+
 
 })
