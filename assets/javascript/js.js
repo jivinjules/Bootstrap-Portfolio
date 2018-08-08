@@ -17,16 +17,11 @@ $("#intro3").on("click", function() {
   $("#intro-box").fadeIn();
 })
 
-var slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+// $(".text1").on("click", function() {
+// var infoForSites = $("<div>")
+// var
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
+// })
 
 })
