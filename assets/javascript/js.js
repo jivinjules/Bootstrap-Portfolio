@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  $("#intro-box").hide();
 
 //Adding moment.js to get clock at the top of the screen
 var currentTime = moment();
@@ -11,6 +12,21 @@ function update() {
 }
 setInterval(update, 60000);
 
+$("#intro3").on("click", function() {
+  $(".front-picture").hide();
+  $("#intro-box").fadeIn();
+})
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
 
 })

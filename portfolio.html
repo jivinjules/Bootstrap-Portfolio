@@ -1,97 +1,129 @@
 <!DOCTYPE html>
 <html lang=en>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="assets/css/reset.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-    crossorigin="anonymous">
-<link rel="stylesheet" href="assets/css/style.css">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Julie Hodges Web Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/reset.css">
+
+   
+    <!--Linking external stylesheet to style elements to match last week's homework exactly-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--Linking google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Convergence|Expletus+Sans|Voces" rel="stylesheet">
+
+    <!--Linking jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Moment JS -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</head>
 
 <body>
-    <!--Bootstrap navbar and links-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="col-md-1"></div>
-        <a class="navbar-brand" section id="my-name">Julie Hodges</a>
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ml-auto">
-                <a class="nav-item nav-link" href="index.html">About</a>
-                <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
-                <a class="nav-item nav-link" href="contact.html">Contact</a>
-            </div>
-        </div>
-    </nav>
-    <div class="container">
-        <br>
-        <br>
-        
-        <!--Gallery images contained within Bootstrap rows and columns-->
-        <div class="row">
-            <div class="col-md-9">
-                <h1>Gallery</h1>
-                <hr>
-            </div>
-        </div>
+    <!--Bootstrap Nav Bar with menu link-->
+    <div class="content">
+        <header>
 
-        <div class="row">
-            <div class="col-md-3">
-                <div class="container">
-
-                    <img src="assets/images/Thor.jpg" alt="Thor">
-                    <div class="text-block">
-
-                        <p>Thor</p>
+            <div class="container1">
+                <div class="dropdown">
+                    <button class="dropbtn">Menu</button>
+                    <div class="dropdown-content">
+                        <a class="dropdown-item" href="index.html">Homepage</a>
+                        <a class="dropdown-item" href="contact.html">Contact Julie</a>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="container">
-                    <img src="assets/images/Loki.jpg" alt="Loki">
-                    <div class="text-block">
+                <span class="navbar-brand">
+                    <strong>Julie Hodges</strong> Portfolio</span>
 
-                        <p>Loki</p>
-                    </div>
+            </div>
+        </header>
+
+        <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 5</div>
+                  <img src="assets/images/trainschedule-screenshot.png" style="width:100%">
+                  <div class="text1">Click here to learn about Train Scheduler</div>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="container">
-                    <img src="assets/images/Scarlett-Witch.jpg" alt="Scarlett Witch">
-                    <div class="text-block">
-
-                        <p>Scarlett Witch</p>
-                    </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 5</div>
+                  <img src="assets/images/hangman-screenshot.png" style="width:100%">
+                  <div class="text2">Click here to learn about Hangman</div>
                 </div>
-            </div>
-        </div>
-
-
-        <div class="row">
-            <div class="col-md-3">
-                <div class="container-fluid">
-                    <img src="assets/images/Black Panther.jpg" alt="Black Panther">
-                    <div class="text-block">
-
-                        <p>Black Panther</p>
-
-                    </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 5</div>
+                  <img src="assets/images/groupproject-screenshot.png" style="width:100%">
+                  <div class="text3">Click here to learn about What's for Dinner, DFW</div>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="container">
-                    <img src="assets/images/Dr. Strange.jpg" alt="Dr. Strange">
-                    <div class="text-block">
 
-                        <p>Dr. Strange</p>
-                    </div>
+                <div class="mySlides fade">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="assets/images/crysalcounter-screenshot.png" style="width:100%">
+                        <div class="text4">Click here to learn about Crystal Counter</div>
+                      </div>
+
+                      <div class="mySlides fade">
+                            <div class="numbertext">4 / 5</div>
+                            <img src="assets/images/giphy-screenshot.png" style="width:100%">
+                            <div class="text5">Click here to learn about Giphy</div>
+                          </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
                 </div>
-            </div>
-        </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                  <span class="dot" onclick="currentSlide(4)"></span>
+                  <span class="dot" onclick="currentSlide(5)"></span> 
+                </div>
 
-    </div>
-       <br>
-    <br>
-    <footer>Copyright &copy 2018</footer>
+                <script>
+                        var slideIndex = 1;
+                        showSlides(slideIndex);
+                        
+                        function plusSlides(n) {
+                          showSlides(slideIndex += n);
+                        }
+                        
+                        function currentSlide(n) {
+                          showSlides(slideIndex = n);
+                        }
+                        
+                        function showSlides(n) {
+                          var i;
+                          var slides = document.getElementsByClassName("mySlides");
+                          var dots = document.getElementsByClassName("dot");
+                          if (n > slides.length) {slideIndex = 1}    
+                          if (n < 1) {slideIndex = slides.length}
+                          for (i = 0; i < slides.length; i++) {
+                              slides[i].style.display = "none";  
+                          }
+                          for (i = 0; i < dots.length; i++) {
+                              dots[i].className = dots[i].className.replace(" active", "");
+                          }
+                          slides[slideIndex-1].style.display = "block";  
+                          dots[slideIndex-1].className += " active";
+                        }
+                        </script>
+
+
+        <footer>Copyright &copy 2018
+            <div id="clock" class="clock">loading ...</div>
+        </footer>
+
+        <script src="assets/javascript/js.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
 </body>
+
+</html>
