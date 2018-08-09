@@ -63,43 +63,11 @@ body {
     border-radius: 2px;
 }
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: #000d2e;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
- 
   header {
       padding-top: 30px;
       padding-left: 50px;
       padding-right: 20px;
+      margin-bottom: 25px;
   }
 
  .navbar-brand {
@@ -145,7 +113,7 @@ img {vertical-align: middle;}
   max-width: 1000px;
   position: relative;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 40px;
 
 }
 
@@ -238,7 +206,7 @@ img {vertical-align: middle;}
 .main-container{
     margin-left: 100px;
     margin-right: 20px;
-    margin-top: 50px;
+    margin-top: 125px;
     }
 
 #intro-box {
@@ -259,13 +227,29 @@ h1 {
     font-size: 30px;
     text-align: center;
 }
+a {
+    text-decoration: none !important;
+   }
+
+#return:hover {
+    background-color: #55c6ff;
+}
+
+#return {
+color: white;
+font-size: 20px;
+letter-spacing: 2;
+font-family: 'Convergence', sans-serif;
+}
 
 #intro, #intro2 {
     font-size: 30px;
+    letter-spacing: 2.5;
     }
 
 #small-container {
-float: right;
+    float: right;
+    margin-right: 100px;
     padding: 60px 20px 0px 20px;
     font-family: 'Convergence', sans-serif;
     color: white;
@@ -275,11 +259,14 @@ float: right;
     height: 300px;
 }
 
-#intro3 {
+#intro3, #intro4 {
     font-size:50px;
+    letter-spacing: 2.75;
+    color:#c5d9dc;
+    line-height: 1.6;
 }
 
-#intro3:hover {
+#intro3:hover, #intro4:hover {
     background-color: #55c6ff;
 }
 
@@ -328,12 +315,13 @@ footer {
     color: #000d2e;
     opacity: .9;
     width: 85%;
-    height: 150px;
+    height: 200px;
     background-color:#f2f7f8; 
-}
+  }
 
-#intro3 {
+#intro3, #intro4 {
     font-size:30px;
+    color: #000d2e;
 }
 
 #intro-box {
@@ -370,14 +358,15 @@ footer {
 
 header {
     padding: 5px 5px 5px 10px;
-}
+   }
 
 #intro, #intro2, h1, #introbox {
     font-size: 15px;
     }
 
-    #intro3 {
+    #intro3, #intro4 {
         font-size:25px;
+        color:#000d2e;
     }
 
     #small-container {
