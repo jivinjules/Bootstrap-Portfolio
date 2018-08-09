@@ -1,27 +1,94 @@
 $(document).ready(function () {
   $("#intro-box").hide();
+  $("#train-info").hide();
+  $("#hangman-info").hide();
+  $("#wfddfw-info").hide();
+  $("#crystal-info").hide();
+  $("#giphy-info").hide();
+  $("#trivia-info").hide();
 
-//Adding moment.js to get clock at the top of the screen
-var currentTime = moment();
+  //Adding moment.js to get clock at the top of the screen
+  var currentTime = moment();
 
-//displays current time on the jumbotron
-$('#clock').html(moment(currentTime).format('MMMM D, YYYY LT'));
+  //displays current time on the jumbotron
+  $('#clock').html(moment(currentTime).format('MMMM D, YYYY LT'));
 
-function update() {
+  function update() {
     $('#clock').html(moment().format('MMMM D, YYYY LT'));
-}
-setInterval(update, 60000);
+  }
+  setInterval(update, 60000);
 
-$("#intro3").on("click", function() {
-  $(".front-picture").hide();
-  $("#intro-box").fadeIn();
-})
+  //Allows the user to see the intro box when they press "Meet Julie"
+  $("#intro3").on("click", function () {
+    $(".front-picture").hide();
+    $("#intro-box").fadeIn();
+  })
 
 
-// $(".text1").on("click", function() {
-// var infoForSites = $("<div>")
-// var
+  //Updates the portfolio page. 
+  //When the user clicks the "learn more about..." area, it reveals an info div
+  //When they press the return button, the div is hidden and goes back to the carousel
+  $(".text1").on("click", function () {
+    $(".slideshow-container").hide();
+    $("#train-info").fadeIn();
+    $("#return-btn1").on("click", function () {
+      $("#train-info").hide();
+      $(".slideshow-container").fadeIn();
+    });
 
-// })
+  });
+
+  $(".text2").on("click", function () {
+    $(".slideshow-container").hide();
+    $("#hangman-info").fadeIn();
+    $("#return-btn2").on("click", function () {
+      $("#hangman-info").hide();
+      $(".slideshow-container").fadeIn();
+    })
+
+  });
+
+  $(".text3").on("click", function () {
+    $(".slideshow-container").hide();
+    $("#wfddfw-info").fadeIn();
+    $("#return-btn3").on("click", function () {
+      $("#wfddfw-info").hide();
+      $(".slideshow-container").fadeIn();
+
+    });
+
+  });
+
+  $(".text4").on("click", function () {
+    $(".slideshow-container").hide();
+    $("#crystal-info").fadeIn();
+    $("#return-btn4").on("click", function () {
+      $("#crystal-info").hide();
+      $(".slideshow-container").fadeIn();
+
+    });
+
+  });
+
+  $(".text5").on("click", function () {
+    $(".slideshow-container").hide();
+    $("#giphy-info").fadeIn();
+    $("#return-btn5").on("click", function () {
+      $("#giphy-info").hide();
+      $(".slideshow-container").fadeIn();
+
+    });
+
+  });
+
+  $(".text6").on("click", function () {
+    $(".slideshow-container").hide();
+    $("#trivia-info").fadeIn();
+    $("#return-btn6").on("click", function () {
+      $("#trivia-info").hide();
+      $(".slideshow-container").fadeIn();
+    });
+
+  });
 
 })
