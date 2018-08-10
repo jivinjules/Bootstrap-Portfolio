@@ -229,10 +229,11 @@ h1 {
 }
 a {
     text-decoration: none !important;
+    
    }
 
 #return:hover {
-    background-color: #55c6ff;
+color: rgba(255, 255, 255, 0.575);
 }
 
 #return {
@@ -240,6 +241,7 @@ color: white;
 font-size: 20px;
 letter-spacing: 2;
 font-family: 'Convergence', sans-serif;
+
 }
 
 #intro, #intro2 {
@@ -267,7 +269,8 @@ font-family: 'Convergence', sans-serif;
 }
 
 #intro3:hover, #intro4:hover {
-    background-color: #55c6ff;
+    color: rgba(255, 255, 255, 0.575);
+    cursor: pointer;
 }
 
 footer {
@@ -382,6 +385,7 @@ header {
         position: relative;
         margin: auto;
         margin-top: 50px;
+        display: inline-block;
       }
 
       #contact{
