@@ -368,21 +368,18 @@ header {
     padding: 5px 5px 5px 10px;
    }
 
-#intro, #intro2, h1, #introbox {
-    font-size: 15px;
-    }
-
-    #intro3, #intro4 {
-        font-size:25px;
-        color:#000d2e;
+#intro, #intro2, h1, #introbox, #intro3, #intro4 {
+    font-size: 20px;
+    color:#000d2e;
     }
 
     #small-container {
- width: 75%; 
+ width: 80%; 
+ margin-bottom: 75px;
      }
 
      footer {
-        height: 180px;
+        height: 100px;
     }
 
     .slideshow-container {
