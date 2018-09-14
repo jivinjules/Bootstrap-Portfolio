@@ -8,6 +8,7 @@ $(document).ready(function () {
   $("#trivia-info").hide();
   $("#liri-info").hide();
   $("#bamazon-info").hide();
+  $("#friend-finder-info").hide();
 
   //Adding moment.js to get clock at the top of the screen
   var currentTime = moment();
@@ -112,6 +113,17 @@ $(document).ready(function () {
     });
 
   });
+
+  $(".text9").on("click", function () {
+    $(".slideshow-container").hide();
+    $("#friend-finder-info").fadeIn();
+    $("#return-btn9").on("click", function () {
+      $("#friend-finder-info").hide();
+      $(".slideshow-container").fadeIn();
+    });
+
+  });
+
 
 
 })
