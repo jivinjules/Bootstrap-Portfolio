@@ -9,6 +9,7 @@ $(document).ready(function () {
   $("#liri-info").hide();
   $("#bamazon-info").hide();
   $("#friend-finder-info").hide();
+  $("#burger-info").hide();
 
   //Adding moment.js to get clock at the top of the screen
   var currentTime = moment();
@@ -119,6 +120,16 @@ $(document).ready(function () {
     $("#friend-finder-info").fadeIn();
     $("#return-btn9").on("click", function () {
       $("#friend-finder-info").hide();
+      $(".slideshow-container").fadeIn();
+    });
+
+  });
+
+  $(".text10").on("click", function () {
+    $(".slideshow-container").hide();
+    $("#burger-info").fadeIn();
+    $("#return-btn10").on("click", function () {
+      $("#burger-info").hide();
       $(".slideshow-container").fadeIn();
     });
 
