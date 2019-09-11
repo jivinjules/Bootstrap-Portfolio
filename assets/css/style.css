@@ -42,7 +42,7 @@ body {
     padding-right: 50px;
 }
 
-#return-btn1, #return-btn2, #return-btn3, #return-btn4, #return-btn5, #return-btn6, #return-btn7, #return-btn8, #return-btn9, #return-btn10,  #return-btn11 {
+.return-btn {
     color: #c5d9dc;
     padding: 5px;
     font-size: 16px;
@@ -86,7 +86,7 @@ body {
     float: left;
 }
 
-#train-info, #hangman-info, #giphy-info, #wfddfw-info, #trivia-info, #crystal-info, #liri-info, #bamazon-info, #about, #friend-finder-info, #burger-info, #trading-grounds-info {
+.about, .insert {
     max-width: 600px;
     position: relative;
     margin: auto;
@@ -110,10 +110,10 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 800px;
   position: relative;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 60px;
 
 }
 
@@ -144,7 +144,7 @@ img {vertical-align: middle;}
 }
 
 /* Caption text */
-.text1, .text2, .text3, .text4, .text5, .text6, .text7, .text8, .text9, .text10, .text11 {
+.carousel {
   color: #f2f2f2;
   background-color: black;
   font-size: 25px;
@@ -156,7 +156,11 @@ img {vertical-align: middle;}
   font-family: 'Expletus Sans', cursive;
   }
 
-  .text1:hover, .text2:hover, .text3:hover, .text4:hover, .text5:hover, .text6:hover, .text7:hover, .text8:hover, .text9:hover, .text10:hover, .text11:hover {
+  .slideImage {
+      width: 100%;
+  }
+
+.carousel:hover {
       cursor: pointer;
       color: #5379db;
   }
@@ -176,14 +180,15 @@ img {vertical-align: middle;}
   height: 15px;
   width: 15px;
   margin: 0 2px;
+  margin-bottom: 50px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.active, .dot:hover, a.inspect:hover {
+  opacity: .7;
 }
 
 /* Fading animation */
@@ -237,8 +242,9 @@ a {
     
    }
 
-#return:hover {
-color: rgba(255, 255, 255, 0.575);
+#return:hover, .return-btn:hover {
+opacity: .7;
+cursor: pointer;
 }
 
 #return {
@@ -247,6 +253,10 @@ font-size: 20px;
 letter-spacing: 2;
 font-family: 'Convergence', sans-serif;
 
+}
+
+#left {
+    float: right;
 }
 
 #intro, #intro2 {
