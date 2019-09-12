@@ -3,27 +3,19 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Voces', cursive;
-     }
-  
-.content {
-    display: block;
-    background-size: 100%;
-    height: 100%;
+    overflow: hidden;
     width: 100%;
     background: 
     linear-gradient(
       rgb(0, 0, 0, .7), 
       rgb(0, 0, 0, .7)),
        url("../images/background.jpg");
-    background-size: 100%;
+    /* background-size: 100%; */
     background-size: cover;
     background-repeat: no-repeat;
-    flex: 1 auto;
 
-  }
-
-
+     }
+  
 .linkedin {
     width: 30px;
     height: 30px;
@@ -42,14 +34,14 @@ body {
     padding-right: 50px;
 }
 
-.return-btn {
+.return-btn, .return {
     color: #c5d9dc;
     padding: 5px;
     font-size: 16px;
     border: none;
     background-color: #000d2e;
     border-radius: 2px;
-    font-family: 'Convergence', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 /* Style The Dropdown Button */
@@ -63,21 +55,13 @@ body {
     border-radius: 2px;
 }
 
-  header {
-      padding-top: 30px;
-      padding-left: 50px;
-      padding-right: 20px;
-      margin-bottom: 25px;
-  }
-
- .navbar-brand {
-   font-size:45px;
-    letter-spacing: 1.5px;
+header {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+    font-family: 'Ubuntu', sans-serif;
     color: #c5d9dc;
-  text-align: right;
-  float: right;
-    font-family: 'Expletus Sans', cursive;
-  }
+}
 
 .profile-image {
     width: 150px;
@@ -99,12 +83,12 @@ body {
     border-radius: 2px;
     color: #000d2e;
     padding: 30px;
-    font-family: 'Convergence', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
 }
 
 * {box-sizing: border-box}
-body {font-family: 'Convergence', sans-serif}
+body {font-family: 'Ubuntu', sans-serif}
 .mySlides {display: none}
 img {vertical-align: middle;}
 
@@ -153,7 +137,7 @@ img {vertical-align: middle;}
   bottom: 8px;
   width: 100%;
   text-align: center;
-  font-family: 'Expletus Sans', cursive;
+  font-family: 'Ubuntu', sans-serif;
   }
 
   .slideImage {
@@ -211,15 +195,10 @@ img {vertical-align: middle;}
 
 .content {
     flex: 1 0 auto;
+    height: 100%;
   }
 
-.main-container{
-    margin-left: 100px;
-    margin-right: 20px;
-    margin-top: 125px;
-    }
-
-#intro-box {
+.main-container {
     padding: 30px;
     background-color:#f2f7f8;
     opacity: .85;
@@ -227,13 +206,15 @@ img {vertical-align: middle;}
     -webkit-box-shadow: inset 0 0 10px #f1f4f5;
     box-shadow:         inset 0 0 10px #f1f4f5;
     border-radius: 2px;
-    float: left;
-    width: 60%;
+    margin: auto;
+    width: 80%;
+    height: 50%;
+    margin-top: 125px;
  
 }
 
 h1 {
-    font-family: 'Convergence', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 30px;
     text-align: center;
 }
@@ -242,17 +223,9 @@ a {
     
    }
 
-#return:hover, .return-btn:hover {
+.return:hover, .return-btn:hover {
 opacity: .7;
 cursor: pointer;
-}
-
-#return {
-color: white;
-font-size: 20px;
-letter-spacing: 2;
-font-family: 'Convergence', sans-serif;
-
 }
 
 #left {
@@ -265,22 +238,13 @@ font-family: 'Convergence', sans-serif;
     }
 
 #small-container {
-    float: right;
-    margin-right: 100px;
-    padding: 60px 20px 0px 20px;
-    font-family: 'Convergence', sans-serif;
-    color: white;
-    opacity: .9;
-   width: 30%;
-    text-align: center;
-    height: 300px;
+   color: white;
+   opacity: .9;
+   text-align: center;
 }
 
 #intro3, #intro4 {
-    font-size:50px;
-    letter-spacing: 2.75;
     color:#c5d9dc;
-    line-height: 1.6;
 }
 
 #intro3:hover, #intro4:hover {
@@ -307,35 +271,40 @@ footer {
 /* Media queries for screens*/
 
 @media screen and (max-width: 980px) {
-    .navbar-brand {
-        font-size:30px;
-         letter-spacing: 1px;
-          }
+.navbar-brand {
+    font-size:30px;
+    letter-spacing: 1px;
+}
 
 .main-container{
-        margin-top: 20px;
-        margin-left:20px;
-        margin-right:20px;
-            
-           }
+    margin-top: 20px;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+header {
+    padding: 5px 5px 5px 10px;
+    margin-bottom: 0px;
+}
 
 .front-picture {
     padding-left: 30px;
 }
+
 #intro, #intro2 {
     font-size: 20px;
-    }
+}
 
 #small-container {
    margin: 20px 50px 20px 50px;
-    padding: 10px 10px 10px 10px;
-    font-family: 'Convergence', sans-serif;
-    color: #000d2e;
-    opacity: .9;
-    width: 85%;
-    height: 200px;
-    background-color:#f2f7f8; 
-  }
+   padding: 10px 10px 10px 10px;
+   font-family: 'Ubuntu', sans-serif;
+   color: #000d2e;
+   opacity: .9;
+   width: 85%;
+   height: 200px;
+   background-color:#f2f7f8; 
+}
 
 #intro3, #intro4 {
     font-size:30px;
@@ -347,19 +316,32 @@ footer {
  
 }
 
-footer {
-    height: 300px;
+.about, .insert {
+    max-width: none;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#contact{
+    font-size: 25px;
+    padding-right: 50px;
+}
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    display: inline-block;
+}
+
+.dot {
+    margin-bottom: 20px;
 }
 
 }
 
 @media screen and (max-width:640px) {
- .navbar-brand {
-    font-size:18px;
-    letter-spacing: 1px;
-    width: 100%;
-    text-align: left;
-          }
 
 .main-container{
     margin-top: 20px;
@@ -376,42 +358,34 @@ footer {
 
 header {
     padding: 5px 5px 5px 10px;
+    margin-bottom: 0px;
    }
 
-#intro, #intro2, h1, #introbox, #intro3, #intro4 {
-    font-size: 20px;
-    color:#000d2e;
-    }
+footer {    height: 100px;
+}
 
-    #small-container {
- width: 80%; 
- margin-bottom: 75px;
-     }
-
-     footer {
-        height: 100px;
-    }
-
-    .slideshow-container {
-        max-width: 1000px;
-        position: relative;
-        margin: auto;
-        margin-top: 50px;
-        display: inline-block;
-      }
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    display: inline-block;
+}
 
       #contact{
         font-size: 25px;
         padding-right: 50px;
     }
 
-    #train-info, #hangman-info, #giphy-info, #wfddfw-info, #trivia-info, #crystal-info, #liri-info, #bamazon-info, #friend-finder-info, #burger-info, #trading-grounds-info {
-        padding: 15px;
-        font-family: 'Convergence', sans-serif;
-        font-size: 15px;
+    .dot {
+        margin-bottom: 20px;
     }
-    
-    
+
+    .about, .insert {
+        max-width: none;
+        margin-top: 20px;
+        padding: 20px;
+    }
 }
    
 
