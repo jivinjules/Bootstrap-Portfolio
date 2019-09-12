@@ -9,13 +9,56 @@ body {
     linear-gradient(
       rgb(0, 0, 0, .7), 
       rgb(0, 0, 0, .7)),
-       url("../images/background.jpg");
-    /* background-size: 100%; */
+       url("../images/background.jpg") center;
     background-size: cover;
     background-repeat: no-repeat;
+}
 
-     }
-  
+.coolText {
+    /* border:px solid #2a4a48; */
+    border-radius: 2.5px;
+    font: bolder 6vw "Alfa Slab One";
+    text-align: center;
+    margin: 0;
+    background: 
+    linear-gradient(
+      rgb(0, 0, 0, .7), 
+      rgb(0, 0, 0, .7)),
+       url("../images/background.jpg") center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-background-clip:text;
+     color: transparent;
+     box-shadow: 0px 3px 41px -4px rgba(0,0,0,0.75);
+
+}
+
+.coolText:hover {
+    text-indent: 7px;
+    transition: text-indent .5s;
+  }
+
+i.fas.fa-code-branch {
+    display: -webkit-inline-box
+}
+  .intro {
+    font-size: 30px;
+    letter-spacing: 2.5;
+    background: 
+    linear-gradient(
+      rgb(0, 0, 0, .7), 
+      rgb(0, 0, 0, .7)),
+       url("../images/background.jpg") center;
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-clip: text;
+       -webkit-background-clip:text;
+        color: transparent;
+    margin-top: 20px;
+}
+
+
 .linkedin {
     width: 30px;
     height: 30px;
@@ -53,14 +96,6 @@ body {
     cursor: pointer;
     background-color: #000d2e;
     border-radius: 2px;
-}
-
-header {
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 25px;
-    font-family: 'Ubuntu', sans-serif;
-    color: #c5d9dc;
 }
 
 .profile-image {
@@ -193,10 +228,10 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
-.content {
+/* .content {
     flex: 1 0 auto;
     height: 100%;
-  }
+  } */
 
 .main-container {
     padding: 30px;
@@ -208,7 +243,7 @@ img {vertical-align: middle;}
     border-radius: 2px;
     margin: auto;
     width: 80%;
-    height: 50%;
+    height: 60%;
     margin-top: 125px;
  
 }
@@ -232,11 +267,6 @@ cursor: pointer;
     float: right;
 }
 
-#intro, #intro2 {
-    font-size: 30px;
-    letter-spacing: 2.5;
-    }
-
 #small-container {
    color: white;
    opacity: .9;
@@ -244,12 +274,22 @@ cursor: pointer;
 }
 
 #intro3, #intro4 {
-    color:#c5d9dc;
+    color:#2a4a48;
+     
+}
+
+#intro3 {
+    float: left;
+}
+
+#intro4 {
+    float: right;
 }
 
 #intro3:hover, #intro4:hover {
-    color: rgba(255, 255, 255, 0.575);
+    opacity: .7;
     cursor: pointer;
+
 }
 
 footer {
