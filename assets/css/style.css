@@ -30,7 +30,7 @@ body {
     background-clip: text;
     -webkit-background-clip:text;
      color: transparent;
-     box-shadow: 0px 3px 41px -4px rgba(0,0,0,0.75);
+     box-shadow: inset 0px 3px 41px -4px rgba(0,0,0,0.75);
 
 }
 
@@ -75,6 +75,7 @@ i.fas.fa-code-branch {
 #contact{
     font-size: 30px;
     padding-right: 50px;
+    margin-bottom: 0;
 }
 
 .return-btn, .return {
@@ -228,11 +229,6 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
-/* .content {
-    flex: 1 0 auto;
-    height: 100%;
-  } */
-
 .main-container {
     padding: 30px;
     background-color:#f2f7f8;
@@ -245,8 +241,7 @@ img {vertical-align: middle;}
     width: 80%;
     height: 60%;
     margin-top: 125px;
- 
-}
+  }
 
 h1 {
     font-family: 'Ubuntu', sans-serif;
@@ -271,24 +266,35 @@ cursor: pointer;
    color: white;
    opacity: .9;
    text-align: center;
+   position: relative;
+   height: 100%;
 }
 
-#intro3, #intro4 {
-    color:#2a4a48;
-     
+div#intro3.col-md-6, div#intro4.col-md-6 {
+    color:#2a4a48 !important;
+    position: absolute;
+    bottom: 0;
+    font-size: 30px;     
 }
 
-#intro3 {
+a {
+    color: #2a4a48 !important;
+}
+
+div#intro3.col-md-6 {
     float: left;
+    left: 0;
 }
 
 #intro4 {
     float: right;
+    right: 0;
 }
 
-#intro3:hover, #intro4:hover {
+div#intro3.col-md-6:hover, div#intro4.col-md-6:hover {
     opacity: .7;
     cursor: pointer;
+    background-color: white;
 
 }
 
@@ -297,7 +303,6 @@ footer {
     bottom: 0;
     width: 100%;
     height: 100px;
-    clear: both;
     color: #000d2e;
     background-color:#f2f7f8;
     opacity: .85;
@@ -305,7 +310,6 @@ footer {
     text-align: center;
     padding-top: 20px;
 }
-
 
 
 /* Media queries for screens*/
@@ -318,37 +322,22 @@ footer {
 
 .main-container{
     margin-top: 20px;
-    margin-left:20px;
-    margin-right:20px;
+    height: 75%; 
 }
 
-header {
-    padding: 5px 5px 5px 10px;
-    margin-bottom: 0px;
+div#small-container {
+  width: 100%;
 }
 
-.front-picture {
-    padding-left: 30px;
-}
-
-#intro, #intro2 {
+p.intro {
     font-size: 20px;
 }
 
-#small-container {
-   margin: 20px 50px 20px 50px;
-   padding: 10px 10px 10px 10px;
-   font-family: 'Ubuntu', sans-serif;
-   color: #000d2e;
-   opacity: .9;
-   width: 85%;
-   height: 200px;
-   background-color:#f2f7f8; 
-}
-
-#intro3, #intro4 {
-    font-size:30px;
+div#intro3.col-md-6, div#intro4.col-md-6 {
+    font-size:20px;
     color: #000d2e;
+    bottom: none;
+    position: relative;
 }
 
 #intro-box {
@@ -379,29 +368,39 @@ header {
     margin-bottom: 20px;
 }
 
+h1 {
+    font-size: 15px !important;
+}
+
+.container {
+    padding-right:0px !important;
+    padding-left:0px !important;
+}
+
 }
 
 @media screen and (max-width:640px) {
 
 .main-container{
     margin-top: 20px;
-    margin-left:20px;
-    margin-right:20px;
+    height: 75%
      }
 
 #picture {
     width:85%;
 }
-.front-picture {
-    width: 100%;
-        }
-
-header {
-    padding: 5px 5px 5px 10px;
-    margin-bottom: 0px;
-   }
 
 footer {    height: 100px;
+}
+
+
+h1 {
+    font-size: 15px !important;
+}
+
+.container {
+    padding-right:0px !important;
+    padding: left 0px !important;
 }
 
 .slideshow-container {
